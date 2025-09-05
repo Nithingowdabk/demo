@@ -1,8 +1,8 @@
 // Simple mini chatbot for 'Incredible Guide'
 // Mini chatbot for 'Incredible Guide' (opens only when button is clicked)
 const chatbotBtn = document.createElement('button');
-chatbotBtn.textContent = '💬 Incredible Guide';
-chatbotBtn.style = 'position:fixed;bottom:30px;right:30px;z-index:999;background:#22a63a;color:#fff;padding:12px 22px;border:none;border-radius:25px;font-size:1.1rem;box-shadow:0 2px 8px #aaa;cursor:pointer;';
+chatbotBtn.innerHTML = `<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="16" fill="#22a63a"/><path d="M10 22c0-2.21 2.69-4 6-4s6 1.79 6 4" stroke="#fff" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="14" r="1.5" fill="#fff"/><circle cx="20" cy="14" r="1.5" fill="#fff"/></svg>`;
+chatbotBtn.style = 'position:fixed;bottom:30px;right:30px;z-index:999;background:transparent;border:none;border-radius:50%;width:48px;height:48px;box-shadow:0 2px 8px #aaa;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;';
 document.body.appendChild(chatbotBtn);
 
 let chatbotModal = null;

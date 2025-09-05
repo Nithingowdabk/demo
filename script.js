@@ -1,3 +1,14 @@
+// Sticky header show/hide on scroll
+document.addEventListener('DOMContentLoaded', function() {
+  var sticky = document.getElementById('stickyHeader');
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 80) {
+      sticky.style.display = 'flex';
+    } else {
+      sticky.style.display = 'none';
+    }
+  });
+});
 const treks = [
   {
     name: "Wayanad Trip",
@@ -59,15 +70,25 @@ function showPDF(idx) {
   const pdfModal = document.createElement('div');
   pdfModal.className = 'modal';
   pdfModal.innerHTML = `
-    <div class="modal-content">
-      <span class="close" id="closePdfModal">&times;</span>
-      <h2>Download PDF for ${treks[idx].name}</h2>
-      <form id="pdfForm">
-        <label>Name:</label><br>
-        <input type="text" id="pdfName" required style="width:100%;margin-bottom:10px;"><br>
-        <label>Phone Number:</label><br>
-        <input type="tel" id="pdfPhone" required pattern="[0-9]{10}" style="width:100%;margin-bottom:20px;"><br>
-        <button type="submit" class="btn" style="width:100%;">Download PDF</button>
+    <div class="pdf-modal-content">
+      <span class="pdf-close" id="closePdfModal">&times;</span>
+      <h2 class="pdf-title">Download PDF</h2>
+      <form id="pdfForm" style="margin-top:30px;">
+        <label class="pdf-label">Full Name</label>
+        <input type="text" id="pdfName" required class="pdf-input" placeholder="Full Name">
+        <label class="pdf-label">Phone Number</label>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:18px;">
+          <select id="pdfCountry" class="pdf-country">
+            <option value="IN">🇮🇳 +91</option>
+            <option value="US">🇺🇸 +1</option>
+            <option value="UK">🇬🇧 +44</option>
+          </select>
+          <input type="tel" id="pdfPhone" required pattern="[0-9]{10}" class="pdf-input" style="flex:1;" placeholder="Phone Number">
+        </div>
+        <label style="display:flex;align-items:center;gap:8px;margin-bottom:18px;">
+          <input type="checkbox" id="pdfCallback" style="width:18px;height:18px;"> Expecting Callback?
+        </label>
+        <button type="submit" class="pdf-btn">Download PDF</button>
       </form>
     </div>
   `;
