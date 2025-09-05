@@ -89,7 +89,7 @@ body::before {
   margin-bottom: 10px;
 }
 .title {
-  color: #f3cb4d;
+  color: #22a63a;
   font-size: 2.2rem;
   margin-bottom: 20px;
 }
@@ -98,7 +98,7 @@ body::before {
   font-size: 1rem;
   margin-bottom: 30px;
   border-radius: 5px;
-  border: 1px solid #f3cb4d;
+  border: 1px solid #22a63a;
 }
 .trek-list {
   display: flex;
@@ -106,7 +106,7 @@ body::before {
   gap: 20px;
 }
 .trek-card {
-  background: #f3cb4d;
+  background: #22a63a;
   border-radius: 20px;
   display: flex;
   align-items: center;
