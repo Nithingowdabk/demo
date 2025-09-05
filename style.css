@@ -1,3 +1,60 @@
+body {
+  background: url('bg.webp') no-repeat center center fixed;
+  background-size: cover;
+}
+.site-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.colorful-title {
+  background: linear-gradient(90deg,#25d366,#2ecc40,#1e90ff,#ffb347);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.whatsapp-svg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px #2225;
+  display: block;
+}
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.header-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.header-center {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.whatsapp-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 8px #2225;
+}
 .pdf-modal-content {
   background: #fff;
   border-radius: 18px;
@@ -174,14 +231,7 @@
   .chatbot-btn:hover {
     box-shadow: 0 4px 24px #2227;
   }
-  content: '';
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  z-index: -1;
-  background: url('bckgnr.webp') no-repeat center center fixed;
-  background-size: cover;
-  opacity: 0.75;
-  pointer-events: none;
+  /* Removed invalid background block and stray content/position lines */
 }
 .container {
   max-width: 900px;
