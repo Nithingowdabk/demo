@@ -8,7 +8,7 @@ body {
   letter-spacing: 1px;
 }
 .colorful-title {
-  background: linear-gradient(90deg,#25d366,#2ecc40,#1e90ff,#ffb347);
+  background: linear-gradient(90deg,#93E9BE,#0f8b45,#0b5e50,#42b80b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -246,7 +246,7 @@ body {
   margin-bottom: 10px;
 }
 .title {
-  color: #22a63a;
+  color: #012e18;
   font-size: 2.2rem;
   margin-bottom: 20px;
 }
@@ -255,7 +255,7 @@ body {
   font-size: 1rem;
   margin-bottom: 30px;
   border-radius: 5px;
-  border: 1px solid #22a63a;
+  border: 1px solid #93E9BE;
 }
 .trek-list {
   display: flex;
@@ -263,7 +263,7 @@ body {
   gap: 20px;
 }
 .trek-card {
-  background: #22a63a;
+  background: #93E9BE;
   border-radius: 20px;
   display: flex;
   align-items: center;

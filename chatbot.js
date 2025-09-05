@@ -1,7 +1,15 @@
 // Simple mini chatbot for 'Incredible Guide'
 // Mini chatbot for 'Incredible Guide' (opens only when button is clicked)
 const chatbotBtn = document.createElement('button');
-chatbotBtn.innerHTML = `<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="16" fill="#22a63a"/><path d="M10 22c0-2.21 2.69-4 6-4s6 1.79 6 4" stroke="#fff" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="14" r="1.5" fill="#fff"/><circle cx="20" cy="14" r="1.5" fill="#fff"/></svg>`;
+chatbotBtn.innerHTML = `<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="20" cy="20" r="20" fill="#93E9BE"/>
+  <rect x="11" y="15" width="18" height="12" rx="6" fill="#fff" stroke="#222" stroke-width="2"/>
+  <circle cx="16" cy="21" r="2" fill="#222"/>
+  <circle cx="24" cy="21" r="2" fill="#222"/>
+  <rect x="17" y="27" width="6" height="2" rx="1" fill="#222"/>
+  <rect x="14" y="13" width="2" height="4" rx="1" fill="#222"/>
+  <rect x="24" y="13" width="2" height="4" rx="1" fill="#222"/>
+</svg>`;
 chatbotBtn.style = 'position:fixed;bottom:30px;right:30px;z-index:999;background:transparent;border:none;border-radius:50%;width:48px;height:48px;box-shadow:0 2px 8px #aaa;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;';
 document.body.appendChild(chatbotBtn);
 
