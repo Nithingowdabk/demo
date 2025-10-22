@@ -48,11 +48,12 @@ sendCodeBtn.addEventListener('click', function(){
   // Attempt to send using EmailJS if configured (user should replace with their own keys)
   if(window.emailjs){
   // Using your Gmail service id 'email_verify' and provided template id.
-  emailjs.send('email_verify','template_0j6poxk',{to_email: email, code: currentCode})
+    emailjs.send('email_verify','template_0j6poxk',{to_email: email, code: currentCode})
       .then(()=>{
         sendStatus.textContent = 'Verification code sent to ' + email + '.';
       }).catch((err)=>{
-        sendStatus.textContent = 'Unable to send email (EmailJS not configured). Showing demo code below.';
+        console.error('EmailJS send error:', err);
+        sendStatus.textContent = 'Unable to send email (EmailJS error). Showing demo code below.';
         demoCodeEl.textContent = currentCode;
         showCodeDemo.classList.remove('hidden');
       });
