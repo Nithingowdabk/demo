@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin - Demo Hikes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="admin-container">
+    <h2>Admin Sign In</h2>
+    <form id="loginForm" class="admin-form">
+      <label>Username</label>
+      <input id="adminUser" type="text" placeholder="admin" required>
+      <label>Password</label>
+      <input id="adminPass" type="password" placeholder="password" required>
+      <button class="btn" type="submit">Sign In</button>
+    </form>
+
+    <div id="twoFa" class="admin-form hidden">
+      <p>Enter the email to receive the verification code.</p>
+      <label>Email</label>
+      <input id="adminEmail" type="email" placeholder="admin@example.com" required>
+      <button id="sendCode" class="btn">Send Verification Code</button>
+      <div id="sendStatus" style="margin-top:12px;color:#666;font-size:0.95rem"></div>
+      <div id="showCodeDemo" class="hidden" style="margin-top:10px;background:#f5f5f5;padding:8px;border-radius:6px;color:#111;font-weight:600;">Demo code: <span id="demoCode"></span></div>
+      <label style="margin-top:12px;">Enter Verification Code</label>
+      <input id="verifyCode" type="text" placeholder="6-digit code">
+      <button id="verifyBtn" class="btn">Verify & Enter Admin</button>
+    </div>
+
+    <div id="adminArea" class="hidden">
+      <h3>Welcome, Admin</h3>
+      <p>This is a simple demo admin area. You can add admin-only controls here (edit treks, add content, etc.).</p>
+      <button id="logoutBtn" class="btn">Logout</button>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
