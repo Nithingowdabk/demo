@@ -47,9 +47,8 @@ sendCodeBtn.addEventListener('click', function(){
 
   // Attempt to send using EmailJS if configured (user should replace with their own keys)
   if(window.emailjs){
-  // Using your Gmail service id 'email_verify'. Replace TEMPLATE_ID with your actual template id.
-  // Example template id looks like 'template_abc123'.
-  emailjs.send('email_verify','YOUR_TEMPLATE_ID',{to_email: email, code: currentCode})
+  // Using your Gmail service id 'email_verify' and provided template id.
+  emailjs.send('email_verify','template_0j6poxk',{to_email: email, code: currentCode})
       .then(()=>{
         sendStatus.textContent = 'Verification code sent to ' + email + '.';
       }).catch((err)=>{
