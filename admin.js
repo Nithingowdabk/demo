@@ -47,7 +47,9 @@ sendCodeBtn.addEventListener('click', function(){
 
   // Attempt to send using EmailJS if configured (user should replace with their own keys)
   if(window.emailjs){
-    emailjs.send('service_xxx','template_xxx',{to_email: email, code: currentCode})
+    // Please replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with values from your EmailJS account.
+    // Example: emailjs.init('YOUR_EMAILJS_USERID');
+    emailjs.send('YOUR_SERVICE_ID','YOUR_TEMPLATE_ID',{to_email: email, code: currentCode})
       .then(()=>{
         sendStatus.textContent = 'Verification code sent to ' + email + '.';
       }).catch((err)=>{
