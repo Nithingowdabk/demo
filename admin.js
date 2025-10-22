@@ -22,6 +22,19 @@ loginForm.addEventListener('submit', function(e){
   }
 });
 
+// show/hide password toggle
+const togglePass = document.getElementById('togglePass');
+const adminPass = document.getElementById('adminPass');
+togglePass.addEventListener('click', function(){
+  if(adminPass.type === 'password'){
+    adminPass.type = 'text';
+    togglePass.textContent = 'Hide';
+  } else {
+    adminPass.type = 'password';
+    togglePass.textContent = 'Show';
+  }
+});
+
 function generateCode(){
   return Math.floor(100000 + Math.random()*900000).toString();
 }

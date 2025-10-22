@@ -347,3 +347,4 @@ body {
 .admin-container .btn{background:#93E9BE;color:#111;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer}
 .admin-container .btn:hover{opacity:0.95}
 .hidden{display:none}
+.admin-pass-toggle{position:absolute;right:8px;top:50%;transform:translateY(-50%);background:#fff;border:1px solid #ddd;border-radius:6px;padding:6px 8px;cursor:pointer}

@@ -13,7 +13,10 @@
       <label>Username</label>
       <input id="adminUser" type="text" placeholder="admin" required>
       <label>Password</label>
-      <input id="adminPass" type="password" placeholder="password" required>
+      <div style="position:relative;">
+        <input id="adminPass" type="password" placeholder="password" required style="padding-right:80px;">
+        <button type="button" id="togglePass" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);background:#fff;border:1px solid #ddd;border-radius:6px;padding:6px 8px;cursor:pointer;">Show</button>
+      </div>
       <button class="btn" type="submit">Sign In</button>
     </form>
 
