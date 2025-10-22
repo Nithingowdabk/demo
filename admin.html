@@ -43,10 +43,14 @@
   <!-- EmailJS SDK (optional) - replace USER_ID and include only if you use EmailJS -->
   <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
   <script>
-    // If you have EmailJS account, initialize with your user id, e.g.:
-    // (Replace 'YOUR_EMAILJS_USERID' with your public key)
+    // EmailJS initialized with provided public key
     if(window.emailjs && !window.emailjs._userID){
-      // emailjs.init('YOUR_EMAILJS_USERID');
+      try{
+        emailjs.init('T_NT3ne4iditmkWnO');
+        console.log('EmailJS initialized with provided public key');
+      }catch(e){
+        console.warn('EmailJS init failed', e);
+      }
     }
   </script>
 </body>
